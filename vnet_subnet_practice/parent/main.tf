@@ -5,6 +5,13 @@ module "resorce_group" {
 
   
 }
+module "resorce_group" {
+    source = "../resource_group"
+    resource_group_name="prod-rg02"
+    location="central india"
+
+  
+}
 
 module "virtual_network" {
     depends_on = [ module.resorce_group ]
