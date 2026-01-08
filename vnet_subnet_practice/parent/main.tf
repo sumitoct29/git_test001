@@ -6,6 +6,27 @@ module "resorce_group" {
   
 }
 
+
+
+
+
+
+
+
+
+
+
+
+module "resorce_group1" {
+    source = "../resource_group"
+    resource_group_name="prod-rg03"
+    location="central india"
+
+  
+}
+
+
+
 module "virtual_network" {
     depends_on = [ module.resorce_group ]
     source = "../virtual_network"
