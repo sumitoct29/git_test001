@@ -19,6 +19,14 @@ module "resorce_group" {
 }
 module "resorce_group" {
     source = "../resource_group"
+    resource_group_name="prod-rg07"
+    location="central india"
+
+
+
+}
+module "resorce_group" {
+    source = "../resource_group"
     resource_group_name="prod-rg02"
     location="central india"
 
