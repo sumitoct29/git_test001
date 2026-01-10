@@ -17,6 +17,14 @@ module "resorce_group2" {
   
 }
 
+module "resorce_group111" {
+    source = "../resource_group"
+    resource_group_name="prod-rg0109"
+    location="central india"
+
+  
+}
+
 
 
 
