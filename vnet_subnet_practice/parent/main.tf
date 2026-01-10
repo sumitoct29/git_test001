@@ -9,11 +9,18 @@ module "resorce_group" {
 
 
 
+module "resorce_group2" {
 module "resorce_group" {
     source = "../resource_group"
     resource_group_name="prod-rg06"
     location="central india"
 
+  
+}
+
+module "resorce_group111" {
+    source = "../resource_group"
+    resource_group_name="prod-rg0109"
 
 
 }
