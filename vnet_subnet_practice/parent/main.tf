@@ -10,6 +10,7 @@ module "resorce_group" {
 
 
 module "resorce_group2" {
+module "resorce_group" {
     source = "../resource_group"
     resource_group_name="prod-rg06"
     location="central india"
@@ -20,10 +21,34 @@ module "resorce_group2" {
 module "resorce_group111" {
     source = "../resource_group"
     resource_group_name="prod-rg0109"
+
+
+}
+module "resorce_group" {
+    source = "../resource_group"
+    resource_group_name="prod-rg07"
+    location="central india"
+
+
+
+}
+module "resorce_group" {
+    source = "../resource_group"
+    resource_group_name="prod-rg02"
     location="central india"
 
   
 }
+module "resorce_group" {
+    source = "../resource_group"
+    resource_group_name="prod-rg04"
+    location="central india"
+
+  
+}
+
+
+
 
 
 
